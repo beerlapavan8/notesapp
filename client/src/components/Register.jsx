@@ -20,7 +20,7 @@ const Register = () => {
         if(registedetails.username!=="" && registedetails.contactnumber!=="" && registedetails.password!=="")
             {
         try {
-            const response = await axios.post('http://localhost:5000/adduser', {
+            const response = await axios.post('https://notesapp-4ia4.onrender.com/adduser', {
                 username: registedetails.username,
                 contactnumber: registedetails.contactnumber,
                 password:registedetails.password
