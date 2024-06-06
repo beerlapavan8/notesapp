@@ -10,7 +10,7 @@ const Home = () => {
       try {
         // const response = await axios.get('http://localhost:5000/notes',
         const storedval = localStorage.getItem("usernamesfor");
-        const response = await axios.get(`https://notesapp-4ia4.onrender.com:5000/${storedval}`,
+        const response = await axios.get(`https://notesapp-4ia4.onrender.com/${storedval}`,
          {
           headers: {
             'Content-Type': 'application/json',

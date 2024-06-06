@@ -7,7 +7,7 @@ const NoteDetails = (props) => {
   {
     
     try {
-      const response = await axios.delete(`https://notesapp-4ia4.onrender.com:5000/${val}`, {
+      const response = await axios.delete(`https://notesapp-4ia4.onrender.com/${val}`, {
         headers: {
           'Content-Type': 'application/json',
         },

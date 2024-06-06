@@ -23,7 +23,7 @@ const UpdateUser = () => {
     useEffect( ()=>{
         const fetchData = async () => {
             try {
-                const response = await axios.get(`https://notesapp-4ia4.onrender.com:5000/${id}`, {
+                const response = await axios.get(`https://notesapp-4ia4.onrender.com/${id}`, {
             //   const response = await axios.get(`http://localhost:5000/user/${id}`, {
                 headers: {
                   'Content-Type': 'application/json',
@@ -45,7 +45,7 @@ const UpdateUser = () => {
         if(objectname.notesname!=="" && objectname.notesmessage!=="")
             {
         try {
-            const response = await axios.put(`https://notesapp-4ia4.onrender.com:5000/${id}`, {
+            const response = await axios.put(`https://notesapp-4ia4.onrender.com/${id}`, {
             // const response = await axios.put(`http://localhost:5000/update/${id}`, {
                 notesname: objectname.notesname,
                 notesmessage: objectname.notesmessage,
