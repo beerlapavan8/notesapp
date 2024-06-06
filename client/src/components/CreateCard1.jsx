@@ -27,7 +27,7 @@ const CreateCard1 = () => {
         if(objectname.notesname!=="" && objectname.notesmessage!=="")
             {
         try {
-            const response = await axios.post('https://notesapp-4ia4.onrender.com/updateusernotes', {
+            const response = await axios.post('https://notesapp-4ia4.onrender.com:5000/updateusernotes', {
             // const response = await axios.post('http://localhost:5000/add', {
                 notesname: objectname.notesname,
                 notesmessage: objectname.notesmessage,

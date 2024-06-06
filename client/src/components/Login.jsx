@@ -106,7 +106,7 @@ const Login = () => {
   const fetchData = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.get(`https://notesapp-4ia4.onrender.com/${registedetails.username}`, {
+      const response = await axios.get(`https://notesapp-4ia4.onrender.com:5000/${registedetails.username}`, {
       // const response = await axios.get(`http://localhost:5000/allusers/${registedetails.username}`, {
         headers: {
           'Content-Type': 'application/json',
